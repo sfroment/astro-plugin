@@ -1,0 +1,12 @@
+---
+title: "Markdown + Tailwind"
+layout: ../layouts/main.astro
+---
+
+import styles from "./index.style.js";
+import * as stylex from "@stylexjs/stylex";
+
+<div {...stylex.props(styles.mainGrid)}>
+	<div {...stylex.props(styles.button)} >Stylex classes also work in Markdown!</div>
+	<a href="/" {...stylex.props(styles.p(4), styles.underline)}>Go home</a>
+</div>

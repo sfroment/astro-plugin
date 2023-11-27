@@ -1,0 +1,25 @@
+{
+  "name": "@example/with-stylex",
+  "type": "module",
+  "version": "0.0.2",
+  "private": true,
+  "keywords": [
+    "astro-integration",
+    "astro-component"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^1.1.5",
+    "@sfroment/astro-stylex": "workspace:*",
+    "@types/canvas-confetti": "^1.6.3",
+    "astro": "^3.6.0",
+    "canvas-confetti": "^1.9.2",
+    "@stylexjs/stylex": "0.2.0-beta.27"
+  }
+}

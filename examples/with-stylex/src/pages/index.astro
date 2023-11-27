@@ -1,0 +1,28 @@
+---
+// Component Imports
+import * as stylex from "@stylexjs/stylex";
+
+import Button from '../components/Button.astro';
+import styles from './index.style'
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/stylex.css" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro + Stylex</title>
+	</head>
+
+	<body>
+		<div {...stylex.props(styles.mainGrid)} >
+			<Button>Stylex Button in Astro!</Button>
+			<a href="/markdown-page" {...stylex.props(styles.p(4), stylex.underline)}>Markdown is also supported...</a>
+		</div>
+	</body>
+</html>
+

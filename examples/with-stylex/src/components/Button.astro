@@ -1,0 +1,21 @@
+---
+import * as stylex from "@stylexjs/stylex";
+import styles from '../pages/index.style'
+// Click button, get confetti!
+// Styled by Stylex :)
+---
+
+<button
+	{...stylex.props(styles.button)}
+>
+	<slot />
+</button>
+
+<script>
+	import confetti from 'canvas-confetti';
+	const button = document.body.querySelector('button');
+
+	if (button) {
+		button.addEventListener('click', () => confetti());
+	}
+</script>
