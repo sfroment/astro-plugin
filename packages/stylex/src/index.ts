@@ -1,6 +1,6 @@
 import type { AstroIntegration } from "astro";
 // @ts-ignore
-import stylexPlugin from "@stylexjs/rollup-plugin";
+import stylexPlugin from "@sfroment/astro-stylex-rollup";
 import StyleXSheet from "@stylexjs/stylex/lib/StyleXSheet.js";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -8,6 +8,7 @@ import { fileURLToPath } from "url";
 export declare interface StylexConfig {
 	fileName?: string;
 	classNamePrefix?: string;
+	astroDir?: string;
 	unstable_moduleResolution?: {
 		type?: "commonJS" | "haste";
 		rootDir?: string;
@@ -23,6 +24,7 @@ export default function stylexIntegration(
 		fileName: "stylex.css",
 		dev: false,
 		classNamePrefix: "x",
+		astroDir: __dirname,
 		unstable_moduleResolution: {
 			type: "commonJS",
 			rootDir: path.join(__dirname, "../.."),

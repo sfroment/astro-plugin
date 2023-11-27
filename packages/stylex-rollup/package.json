@@ -1,22 +1,14 @@
 {
-  "name": "@sfroment/astro-stylex",
+  "name": "@sfroment/astro-stylex-rollup",
   "type": "module",
-  "version": "0.0.8",
-  "types": "./dist/index.d.ts",
+  "version": "0.0.5",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
-  "homepage": "https://github.com/sfroment/astro-plugin",
-  "repository": "https://github.com/sfroment/astro-plugin",
-  "description": "Astro plugin to use stylex",
   "scripts": {
     "build": "node esbuild.js && tsc",
     "check": "astro check"
-  },
-  "author": {
-    "name": "Sacha Froment",
-    "url": "https://github.com/sfroment"
   },
   "keywords": [
     "astro",
@@ -24,9 +16,15 @@
     "astro-integration",
     "withastro"
   ],
+  "homepage": "https://github.com/sfroment/astro-plugin",
+  "repository": "https://github.com/sfroment/astro-plugin",
+  "author": {
+    "name": "Sacha Froment",
+    "url": "https://github.com/sfroment"
+  },
+  "description": "Astro plugin to use stylex with rollup",
   "dependencies": {
     "esbuild": "^0.19.7",
-    "@sfroment/astro-stylex-rollup": "^0.0.5",
     "@babel/plugin-syntax-flow": "^7.23.3",
     "@babel/plugin-syntax-typescript": "^7.23.3",
     "@stylexjs/rollup-plugin": "0.2.0-beta.27",

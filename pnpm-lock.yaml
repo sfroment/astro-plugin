@@ -26,6 +26,34 @@ importers:
       '@babel/plugin-syntax-typescript':
         specifier: ^7.23.3
         version: 7.23.3(@babel/core@7.23.3)
+      '@sfroment/astro-stylex-rollup':
+        specifier: ^0.0.2
+        version: link:../stylex-rollup
+      '@stylexjs/rollup-plugin':
+        specifier: 0.2.0-beta.27
+        version: 0.2.0-beta.27(@babel/traverse@7.23.4)(@babel/types@7.23.4)
+      esbuild:
+        specifier: ^0.19.7
+        version: 0.19.7
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
+    devDependencies:
+      '@stylexjs/stylex':
+        specifier: 0.2.0-beta.27
+        version: 0.2.0-beta.27
+      astro:
+        specifier: ^3.6.0
+        version: 3.6.0(@types/node@20.10.0)(typescript@5.3.2)
+
+  packages/stylex-rollup:
+    dependencies:
+      '@babel/plugin-syntax-flow':
+        specifier: ^7.23.3
+        version: 7.23.3(@babel/core@7.23.3)
+      '@babel/plugin-syntax-typescript':
+        specifier: ^7.23.3
+        version: 7.23.3(@babel/core@7.23.3)
       '@stylexjs/rollup-plugin':
         specifier: 0.2.0-beta.27
         version: 0.2.0-beta.27(@babel/traverse@7.23.4)(@babel/types@7.23.4)
