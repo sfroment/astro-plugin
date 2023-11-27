@@ -21,7 +21,7 @@ This Astro plugin provides an easy and efficient way to integrate Facebook's Sty
 To install the plugin, run the following command in your Astro project:
 
 ```bash
-npm install @sfroment/astro-stylex
+npm install @sfroment/astro-stylex @stylexjs/stylex@beta
 ```
 
 ## Usage

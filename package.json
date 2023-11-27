@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pnpm -r --filter=./packages/* run build"
+    "build": "pnpm -r --filter=./packages/* run build",
+    "publish": "pnpm -r publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
