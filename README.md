@@ -1,4 +1,4 @@
-# Astro Facebook Stylex Plugin
+# [Astro Facebook Stylex Plugin](https://github.com/sfroment/astro-plugin)
 
 ## NOTES
 

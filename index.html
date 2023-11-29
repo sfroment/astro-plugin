@@ -1,1 +1,22 @@
-<meta name="google-site-verification" content="dYGpMR1svv_vRZ3OPRKWGj_DhJBrpWvvK_SSxPZSSOY" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="google-site-verification" content="8pBnkBQkrxlZ_PkA7vb6-gOA7F21WI9cJHsgCgUR1MA" />
+</head>
+
+<body>
+	<div id="markdown-output" style="max-width: 60%; margin: 0 auto;"></div>
+	<script type="module">
+		import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+		fetch('README.md')
+			.then(response => response.text())
+			.then(markdown => {
+				const html = marked.parse(markdown);
+				document.getElementById('markdown-output').innerHTML = html;
+			});
+	</script>
+
+</body>
+
+</html>
