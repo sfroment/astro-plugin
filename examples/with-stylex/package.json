@@ -17,9 +17,9 @@
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",
     "@sfroment/astro-stylex": "workspace:*",
-    "@types/canvas-confetti": "^1.6.3",
-    "astro": "^3.6.0",
-    "canvas-confetti": "^1.9.2",
-    "@stylexjs/stylex": "0.2.0-beta.27"
+    "@stylexjs/stylex": "~0.3.0",
+    "@types/canvas-confetti": "^1.6.4",
+    "astro": "^3.6.4",
+    "canvas-confetti": "^1.9.2"
   }
 }
